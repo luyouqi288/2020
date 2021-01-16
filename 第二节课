@@ -1,0 +1,77 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	int b = ~a;
+//	printf("%d\n", b);//~表示二进制取反位
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = a++;
+//	printf("a=%d\nb=%d\n", a, b);//a=11   b=10后置加加
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 10;
+//	int b = ++a;
+//	printf("a=%d\nb=%d\n", a, b);  // a=11    b=11 前置加加
+//	return 0;
+//}
+
+//强制类型转换
+//int main()
+//{
+//	int a = (int)3.122;
+//	printf("%d\n", a);//			结果是3
+//	return 0;
+//}
+
+//&&逻辑与
+//int main()
+//{
+//	int a = 5;
+//	int b = 3;
+//	int c = a && b;
+//	printf("%d\n", c);//1        非0即为真
+//	return 0;
+//}
+
+//||逻辑或
+//int main()
+//{
+//	int a = 1;
+//	int b = 0;
+//	int c = a || b;
+//	printf("%d\n", c);//1
+//	return 0;
+//}
+//
+//int main()       //比大小
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = 0;
+//	if (a > b)
+//		max = a;
+//	else
+//		max = b;
+//	printf("max=%d\n", max);
+//	return 0;
+//}
+
+//					条件操作符    A?A:A
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = 0;
+//	max = (a > b ? a : b);
+//	printf("%d\n", max);
+//	return 0;
+//}
