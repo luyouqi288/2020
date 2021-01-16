@@ -1,0 +1,87 @@
+//1字面常量  2const修饰的常量   3#define常量   4枚举常量
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//int main()
+//{
+//	int sum1 = 0;
+//	int sum2 = 0;
+//	int sum = 0;
+//	scanf("%d%d", &sum1, &sum2);//&固定
+//	sum = sum1 + sum2;
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
+
+
+//enum Sex     枚举常量---性别
+//{
+//	MALE,
+//FEMALE,
+//SECRET
+//};
+//int main()
+//{
+//	printf("%d\n", MALE);//0
+//	printf("%d\n", FEMALE);//1
+//	printf("%d\n", SECRET);//2
+//	return 0;
+//}
+
+//enum Sex     
+//{
+//	MALE,
+//FEMALE,
+//SECRET
+//};
+//int main()
+//{
+//	enum Sex s = FEMALE;       s表示真实存在的
+//	printf("%d\n", s);
+//	return 0;
+//}
+
+
+
+
+
+//int main()
+//{
+//	//3;//
+//	//3.14;//字面常量
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int num = 4;
+//	printf("%d\n", num);
+//	num = 8;
+//	printf("%d\n", num);
+//	return 0;
+//}//此中num为一个变量
+                            //num本身是变量，只是具有了常属性，其中const固定了这种常属性。
+//int main()
+//{
+//	const int num = 3;
+//	printf("%d\n", num);
+//	num = 5;
+//	printf("%d\n", num);
+//	return 0;
+//}    错误执行   表明const修饰常变量作用是固定常量
+//
+//int main()
+//{
+//    const int n = 10;//           下面的程序可执行但是上面的不可以
+//    int arr[n] = { 0 };            因为n本身仍未变量的性质，只是const固定了这种常属性。
+// /*   int arr[10] = { 0 };
+//    return 0;*/
+//}
+
+
+//#define n 10
+//int main()
+//{
+//    int arr[n] = { 0 };     #define来定义的变量相当于常量
+//    return 0;
+//}
