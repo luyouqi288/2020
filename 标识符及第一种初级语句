@@ -1,0 +1,77 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//int main()
+//{
+//	char arr[] = "lcy";                 lcy
+//  char arr[] = {'a','b','c'};          abc??????
+//  char arr[] = {'a','b','c',0}         abc       
+//	printf("%s\n", arr);                 "abc"='a','b','c','\0'
+//	return 0;                   '\0'字符串的结束标志
+//}
+
+//int main()
+//{
+//	printf("c:\test\32\test.c");
+//	return 0;
+//}            中的\t水平制表符
+
+
+//int main()
+//{
+//	printf("c:\\test\\32\\test.c");   避免转移序列 \32表示32是两个八进制数字，代表的十进制数字作为ASC11对应的字符
+//	return 0;
+//}
+//int main()
+//{
+//	printf("%c\n", '\32');
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%c\n", 'a');
+//	printf("%c\n", '\'');//其中\'避免了符号转移
+//	printf("%s\n", "a");
+//	printf("%s\n", "\"");//同上
+//	return 0;
+//}
+      //    选择语句
+
+//	int input = 0;
+//	printf("加入比特\n");
+//	printf("你要好好学习吗？(1/0)>:");
+//	scanf("%d", &input);
+//	if (input == 1)
+//		printf("好的offer\n");
+//	else
+//		printf("回家\n");
+//	return 0;
+//}
+//           循环语句
+//int main()
+//{
+//    int line = 0;
+//    printf("加入比特\n");
+//    while (line < 10)
+//    {
+//        printf("敲一行代码\n");
+//        line++;
+//    }
+//    printf("好的offer");
+//    return 0;
+//}
+//        循环语句2
+
+//int main()
+//{
+//    int line = 0;
+//    printf("加入比特\n");
+//    while (line < 10)
+//    {
+//        printf("敲一行代码\n");
+//        line++;
+//    }
+//    if (line >= 5)
+//        printf("好的offer");
+//    return 0;
+//}
