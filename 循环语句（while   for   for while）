@@ -1,0 +1,60 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//												循环语句
+//						while循环   break中止循环       continue中止此次循环
+//int main()
+//{
+//	while (1)
+//		printf("C语言\n");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	while (a <= 10)
+//	{
+//		printf("%d\n", a);
+//		a++;
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	while (a <= 10)
+//	{
+//		if (a == 5)
+//			break;
+//		printf("%d ", a);
+//		a++;
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	while (a <= 10)
+//	{
+//		if (a == 5)
+//			continue;
+//		printf("%d ", a);
+//		a++;
+//	}
+//	return 0;
+//}//									陷入死循环         遇到continue会返回下一次循环
+
+//int main()
+//{
+//	int a = 0;
+//	while (a <= 10)
+//	{
+//		a++;
+//		if (a == 5)
+//			continue;
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}//       1,2,3,4,6,7,8,9,10,11
