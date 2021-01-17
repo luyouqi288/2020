@@ -1,0 +1,104 @@
+#include<stdio.h>
+//类型重定义
+//typedef unsigned int u_int
+//
+//static修饰局部变量  局部变量的生命周期变长   全局变量的范围会减小会 只在原文档中产生效应（外部声明无效）
+//ext#define _CRT_SECURE_NO_WARNINGS 1
+//static修饰函数时  同全局变量   改变了两者的作用域（变小了）函数的外部链接使用结束
+
+
+//int Add(int x, int y)
+//{
+//	int z = x + y;
+//	return z;
+//}
+//int main()
+//{
+//	int num1 = 1;
+//	int num2 = 11;
+//	int num = Add(num1, num2);
+//	printf("num=%d\n", num);
+//	return 0;
+//}
+
+
+//#define MAX 100//		#define定义的标识符常量
+//int main()
+//{
+//	int a = MAX;
+//	printf("a=%d\n", a);
+//	return 0;
+//}
+
+
+//int MAX(int x, int y)				用if函数来比较大小
+//{
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+//int main()
+//{
+//	int a = 100;
+//	int b = 20;
+//	int max = MAX(a, b);
+//	printf("max=%d\n", max);
+//	return 0;
+//}
+//						定义宏的同上算法
+//#define MAX(X,Y) (X>Y?X:Y)
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = MAX(a, b);
+//	printf("max=%d\n", max);
+//	return 0;
+//}
+
+//						原本算法
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = (a > b ? a : b);
+//	printf("max=%d\n", max);
+//	return 0;
+//}
+//										&叫做取地址操作符   对应的是%p
+//int main()
+//{
+//	int a = 10;         //4个字节
+//	&a;
+//	printf("%p\n", a);
+//	return 0;
+//}
+//int main()  //       解引用操作符*      *p=多少时
+//{
+//	int a = 10;//		将10存到a中
+//	int* p = &a;//		将a在内存地址表达
+//	* p = 20;//		在地址中换或者增加东西
+//	/*printf("%p\n", p);
+//	printf("%p\n", &a);*/
+//	return 0;
+//}
+
+//int main()/*C语言是面向过程的一种语言    指针大小在32位平台是4个字节，在64位平台是8个字节*/
+//{
+//	char ch = 'a';
+//	char* pc = &ch;
+//	*pc = 'v';
+//	printf("%c\n", ch);
+//	return 0;
+//}
+
+//
+//int main()
+//{
+//	char ch = 'a';
+//	char* pc = &ch;
+//	printf("%d\n", sizeof(pc));/*	4个字节	 与配置管理器有关	*/
+//	return 0;
+//}
+//
