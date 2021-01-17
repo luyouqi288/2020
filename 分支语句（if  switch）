@@ -1,0 +1,143 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+//							if语句
+//										if控制的单条语句
+//int main()
+//{
+//	int age = 10;
+//	if (age < 18)
+//		printf("未成年");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int age = 20;
+//	if (age > 22)
+//		printf("厉害");
+//	else
+//		printf("不厉害");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int age = 44;
+//	if (age < 18)
+//		printf("未成年");
+//	else if (age >= 18 && age < 28)			//最后一个else可以省略
+//		printf("青年");
+//	else if (age >= 28 && age < 40)
+//		printf("壮年");
+//	else if (age >= 40 && age < 70)
+//		printf("中年");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int age = 44;
+//	if (age < 18)
+//		printf("未成年");
+//	else
+//	{
+//		if (age < 28)
+//			printf("青年");
+//		else
+//		{
+//			if (age < 40)
+//				printf("壮年");
+//			else
+//				printf("中年");
+//		}
+//	}
+//
+//
+//	return 0;
+//}
+
+////表示真假	0表示假，   非0表示真（12413461）
+////												if控制多条语句（代码块）int main 
+//
+//int main()
+//{
+//	int a = 1;
+//	if (a < 2) 
+//	{
+//		printf("a不行\n");
+//			printf("哈哈\n");
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	while (a <= 100)
+//	{
+//		if (a % 2 == 1)
+//			printf("%d\n", a);
+//			a++;
+//	}
+//	return 0;
+//}
+
+//										switch   case  语句(berak中止语句配合)
+//											整形表达式
+//										default当作错误钥匙来用
+//int main()
+//{
+//	int day = 0;
+//	scanf_s("%d", &day);
+//	switch(day)
+//	{
+//	case 1:
+//		printf("星期一\n");
+//		break;
+//	case 2:
+//		printf("星期二\n");
+//		break;
+//	case 3:
+//		printf("星期三\n");
+//		break;
+//	case 4:
+//		printf("星期四\n");
+//		break;
+//	case 5:
+//		printf("星期五\n");
+//		break;
+//	case 6:
+//		printf("星期六\n");
+//		break;
+//
+//	case 7:
+//		printf("星期日\n");
+//		break;
+//	}
+//	return 0;
+//}
+
+ //int main()      //  套娃
+//{
+//	int m = 1;
+//	int n = 2;
+//	switch(n)
+//	{
+//	case 1:
+//		m++;
+//	case 2:
+//		n++;
+//	case 3:
+//		switch(n)
+//		{
+//		case 1:
+//			n++;
+//		case 2:
+//			n++;
+//			m++;
+//			break;
+//		}
+//	}
+//	printf("%d\n", m);
+//	return 0;
+//}
