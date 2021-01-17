@@ -102,3 +102,49 @@
 //	return 0;
 //}
 //
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+//int main()
+//{
+//	int a = 10;
+//	int* p = &a;
+//	*p = 20;
+//	printf("%p\n", &a);    000000
+//	printf("%p\n", p);     000000/*    其中*p可以代表a   */
+//	printf("%d\n", *p);    20
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%d\n", sizeof(char*));
+//	printf("%d\n", sizeof(int*));
+//	printf("%d\n", sizeof(double*));/*		4		*/
+//	printf("%d\n", sizeof(float*));
+//	return 0;
+//}
+
+
+//结构体--复杂对象--自己创建出来的对象struct
+//struct Book
+//{
+//	char name[20];				//啰嗦式
+//	short price;
+//};
+//int main()
+//{
+//	struct Book b1 = { "c语言结构",50};
+//	printf("书名：%s\n", b1.name);
+//	printf("价格：%d\n", b1.price);
+//	b1.price = 20;
+//	printf("价格：%d\n", b1.price);
+//
+//
+//
+//
+//
+//	struct Book* pb = &b1;
+//	printf("%s\n", (*pb).name);//printf("%s\n",pb->name);
+//	printf("%d\n", (*pb).price);
+//	return 0;
+//}
