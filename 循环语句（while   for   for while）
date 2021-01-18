@@ -58,3 +58,67 @@
 //	}
 //	return 0;
 //}//       1,2,3,4,6,7,8,9,10,11
+
+//int main()					//while循环
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+//int main()				//scanf和getchar都是输入函数   都会在一个叫输入缓冲区的区域获取数据
+//{
+//	int a = 0;
+//	char password[20] = {0};
+//	printf("请输入密码=>");
+//	scanf("%s", password);
+//										//缓冲区还剩余一个   \n   ==10
+//										//加入一个  getchar=()   就会使清空
+//	printf("请确认(Y/N):>");
+//	a = getchar();
+//	if (a == 'Y')
+//	{
+//		printf("确认成功\n");
+//	}
+//	else
+//	{
+//		printf("确认失败\n");
+//	}
+//	return 0;
+//}{
+
+//int main()
+//{
+//	int passward = 0;
+//	int ch = 0;
+//	int io = 0;
+//	printf("please write the secret:>");
+//	scanf("%s", &passward);
+//	while ((ch = getchar()) != '\n');
+//	{
+//		;
+//	}
+//	printf("yes?(Y/N):>");
+//	io = getchar();
+//	if (io == 'Y')
+//		printf("yes");
+//	else
+//		printf("no");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch>'9')
+//			continue;
+//		putchar(ch);
+//	}
+//
+//	return 0;
+//}
