@@ -122,3 +122,138 @@
 //
 //	return 0;
 //}
+
+
+				//				for   循环
+//int main()
+//{
+//	int a = 0;
+//	for (a = 1;a <= 10; a++)
+//	{
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	for (a = 1;a <= 10;a++)
+//	{
+//		if (a == 5)
+//			break;				/*			continue         */
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	for (;;)
+//	{
+//		printf("haha\n");
+//	}
+//
+//	return 0;
+//}
+
+//int main()//					100个hehe
+//{
+//	int j = 0;
+//	int i = 0;
+//	for (i = 0;i < 10;i++)
+//	{
+//		for (j = 0;j < 10;j++)
+//		{
+//			printf("hehe\n");
+//		 }
+//	}
+//	return 0;
+//}
+//
+
+//int main()//								10个hehe
+//{
+//	int j = 0;
+//	int i = 0;
+//	for (;i < 10;i++)
+//	{
+//		for (;j < 10;j++)//         j第一次循环后并没有销毁
+//		{
+//			printf("hehe\n");
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	for (x = 0, y = 0;x < 2 && y < 5;++x, y++)
+//		printf("hehe\n");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int k = 0;
+//	int j = 0;
+//	for (k = 0, j = 0;j = 0;j++, k++)//  循环0次  因为j=0为赋值并不是“==”判断		0为假所以不进去 
+//	{
+//		j++;
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+
+
+//					do while循环
+//int main()
+//{
+//	int i = 0;
+//	do
+//	{
+//		printf("%d\n", i);
+//		i++;
+//	}
+//	while (i <= 10);
+//	return 0;
+//}
+
+//int main()			//				n的阶层
+//{
+//	int n = 0;
+//	int i = 0;
+//	int ret = 1;
+//	scanf_s("%d", &n);
+//	for (i = 1;i <= n;i++)
+//	{
+//		ret = ret * i;
+//	}
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int n = 0;
+//	int i = 0;
+//	int num = 1;
+//	int num2 = 0;
+//	for (i = 1;i <= 3;i++)
+//	{
+//		for (n = 1;n <= i;n++)
+//		{
+//			num = num * n;
+//		}
+//		num2 = num2 + num;
+//	}
+//	printf("%d\n", num2);
+//	return 0;
+//}//								此时出现错误原因：
+//													ret 1 = 1 * 1 = 1
+//													ret 2 = 1 * 2 = 2
+//													ret 3 = 2 * 2 * 3 = 12
