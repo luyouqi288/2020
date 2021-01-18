@@ -257,3 +257,67 @@
 //													ret 1 = 1 * 1 = 1
 //													ret 2 = 1 * 2 = 2
 //													ret 3 = 2 * 2 * 3 = 12
+
+//int main()							n  的阶乘和
+//{
+//	int n = 0;
+//	int m = 0;
+//	int i = 0;
+//	int sum1 = 1;
+//	int sum2 = 0;
+//	scanf_s("%d", &n);
+//	for (m = 1;m <= n;m++)
+//	{
+//		sum1 = 1;
+//		for (i = 1;i <= m;i++)
+//		{
+//			sum1 = sum1 * i;
+//		}
+//		sum2 = sum2 + sum1;
+//	}
+//	printf("%d\n", sum2);
+//	return 0;
+//}
+
+//int M(int y)//					方程式n的阶乘和
+//{
+//	int m = 0;
+//	int n = 1;
+//	for (m = 1;m <= y;m++)
+//	{
+//		n = n * m;
+//	}
+//	return n;
+//}
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	int z = 0;
+//	int q = 0;
+//	scanf_s("%d", &x);
+//	for (y = 1;y <= x;y++)
+//	{
+//		q = M(y);
+//		z = z + q;
+//	}
+//	printf("%d\n", z);
+//	return 0;
+//}
+
+
+//int main()//						较简易版
+//{
+//	int n = 0;
+//	int m = 0;
+//	int x = 0;
+//	int z = 1;
+//	scanf_s("%d", &n);
+//	for (m = 1;m <= n;m++)
+//	{
+//		z = z * m;
+//		x = x + z;
+//	}
+//	printf("%d\n", x);
+//	return 0;
+//}
