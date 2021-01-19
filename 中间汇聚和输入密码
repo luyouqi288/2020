@@ -1,0 +1,51 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+#include<Windows.h>
+#include<stdlib.h>
+//					多个字符从两端移动向中间汇聚
+//int main()
+//{
+//	char arr1[] = "welcome to bit";
+//	char arr2[] = "##############";
+//	int left = 0;
+//	int right = sizeof(arr1) / sizeof(arr1[0]) - 2;
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(1000);
+//		/*		system("cls")	清空屏幕	*/
+//		left++;
+//		right--;
+// 	}
+//	return 0;
+//}
+
+
+//									输入密码
+//int main()
+//{
+//	int i = 0;
+//	char passward[20] = { 0 };
+//	for (i = 0;i < 3;i++)
+//	{
+//		printf("请输入密码:>");
+//		scanf("%s", passward);
+//		if (strcmp(passward, "123456") == 0)
+//		{
+//			printf("登录成功");
+//			break;
+//		}
+//		else
+//		{
+//			printf("登录失败");
+//		}
+//	if (i == 3)
+//	{
+//		printf("三次密码均错误。");
+//	}
+//	}
+//	return 0;
+//}
