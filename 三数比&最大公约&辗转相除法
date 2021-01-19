@@ -1,0 +1,181 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//int main()				//			无限循环个5  = 与 == 的误区
+//{
+//	int i = 0;
+//	for(i=0;i<10;i++)
+//		if (i = 5)
+//		{
+//			printf("%d\n", i);
+//		}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int b;
+//	int a = 1;
+//	switch (a)
+//	{
+//	case 1:b = 30;
+//	case 2:b = 20;
+//	case 3:b = 10;
+//	default:b = 0;
+//	}
+//	printf("%d\n", b);   /*		    答案是0		   */	
+//	return 0;
+//}
+
+//int main()				//					麻烦型   三数之比
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	scanf_s("%d%d%d", &a, &b, &c);
+//	if (a > b > c)
+//	{
+//		printf("%d\n", a);
+//		printf("%d\n", b);
+//		printf("%d\n", c);
+//	}
+//	else if (b > c)
+//	{
+//		printf("%d\n", b);
+//		if (a > c)
+//		{
+//			printf("%d\n", a);
+//			printf("%d\n", c);
+//		}
+//		else
+//		{
+//			printf("%d\n", c);
+//			printf("%d\n", a);
+//		}
+//	}
+//	else
+//	{
+//		printf("%d\n", c);
+//		if (a > b)
+//		{
+//			printf("%d\n", a);
+//			printf("%d\n", b);
+//		}
+//		else
+//		{
+//			printf("%d\n", b);
+//			printf("%d\n", a);
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()					//    精简版    三数从大到小
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	scanf_s("%d%d%d", &a, &b, &c);
+//	if (a < b)
+//	{
+//		int tmp = a;
+//		a = b;
+//		b = tmp;
+//	}
+//	if (a < c)
+//	{
+//		int tmp = a;
+//		a = c;
+//		c = tmp;
+//	}
+//	if (b < c)
+//	{
+//		int tmp = b;
+//		b = c;
+//		c = tmp;
+//	}
+//	printf("%d %d %d\n", a, b, c);
+//	return 0;
+//}
+
+//int main()				//				1到100之间3的倍数
+//{
+//	int a = 0;
+//	for (a = 1;a <= 100;a++)
+//	{
+//		if (a % 3 == 0)
+//		{
+//			printf("%d ", a);
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()				//		自己的错误求最大公约数
+//{
+//	int a = 0;
+//	int b = 0;
+//	int i = 0;
+//	int sum = 1;
+//	scanf_s("%d%d", &a, &b);
+//	for (i = 1;;i++)
+//	{
+//		if (a % i == 0 && b % i == 0)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()					//    标准答案求两者最大公约数    辗转相除法
+//{
+//	int m = 0;
+//	int n = 0;
+//	int r = 0;
+//	scanf("%d%d", &m, &n);
+//	while (m % n)
+//	{
+//		r = m % n;
+//		m = n;
+//		n = r;
+//	}
+//	printf("%d\n", n);
+//	return 0;
+//}
+
+//int main()					//  1000到2000之间的闰年
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 1000;i <= 2000;i++)
+//	{
+//		if (i % 4 == 0 && i % 100 != 0)
+//		{
+//			printf("%d ", i);
+//			count++;
+//		}
+//		else if (i % 400 == 0)
+//		{
+//			printf("%d ", i);
+//			count++;
+//		}
+//	}
+//	printf("count=%d\n", count);
+//	return 0;
+//}
+
+//int main()				//		答案版 1000到2000之间的闰年
+//{
+//	int year = 0;
+//	int count = 0;
+//	for (year = 1000;year <= 2000;year++)
+//	{
+//		if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+//		{
+//			printf("%d ", year);
+//			count++;
+//		}
+//	}
+//	printf("count=%d\n", count);
+//	return 0;
+//}
