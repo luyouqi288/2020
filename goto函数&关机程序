@@ -1,0 +1,49 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include <stdlib.h>
+#include<string.h>
+
+//int main()//							goto函数
+//{
+//	again:
+//	printf("hello\n");
+//	goto again;
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("1\n");
+//	goto again;
+//	printf("2\n");
+//	again:
+//	printf("3\n");
+//	return 0;
+//}
+
+//int main()//										关机
+//{
+//	char input[20] = { 0 };
+//	//shutdown      设置关机-s    设置时间关机-t
+//	 //system（）-用来执行系统命令
+//	system("shutdown -s -t 600");
+//	again:
+//	printf("请注意，电脑将在一分钟内关机，如果输入：我是谁，就取消关机\n请输入:>");
+//	scanf("%s", &input);
+//	if (strcmp(input, "我是谁"))//strcmp（）专门用来比较两个字符串
+//	{
+//		system("shutdown -a");
+//	}
+//	else
+//	{
+//		goto again;
+//	}
+//	return 0;
+//}
+
+
+
+
+
+
+在本地链接中  服务  这一项试着把该dubug应用程序置到该服务中去在换成自动挡就会自动执行此程序
