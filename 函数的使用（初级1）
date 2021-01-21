@@ -1,0 +1,65 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//void A(int* pa)
+//{
+//	(*pa)++;//     必须是（）里面的
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	A(&a);
+//	printf("%d\n", a);
+//	A(&a);
+//	printf("%d\n", a);
+//	A(&a);
+//	printf("%d\n", a);
+//	return 0;
+//}
+
+//					函数有（嵌套调用&链式反应）
+
+//#include<cstring>
+//int main()
+//{
+//	int len = 0;
+//	len = strlen("abc");
+//	printf("%d\n", len);
+//	printf("%d\n", strlen("abc"));//链式访问
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%d", printf("%d", printf("%d", 43)));//  4321     之后为字符个数
+//	return 0;
+//}
+
+			//		   函数的声明和定义
+
+//int Add(int x, int y);
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int sum = Add(a, b);//   Add自定义函数可以在任意位置      声明应在主函数之前   即（声明）在先
+//	printf("%d\n", sum);
+//	return 0;
+//}
+//int Add(int x, int y)
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+
+//#include"Add.h"
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int sum = Add(a, b);
+//	printf("%d\n", sum);
+//	return 0;
+//}
