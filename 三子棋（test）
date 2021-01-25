@@ -1,0 +1,83 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include"game.h"
+//三子棋游戏
+void menu()
+{
+	printf("******************\n");
+	printf("**1.play  0.exit**\n");
+	printf("******************\n");
+}
+void game()
+{
+	int ret = 0;
+	char board[ROW][EOL] = { 0 };//全部空格
+	//初始化棋盘
+	initboard(board, ROW, EOL);
+	//打印棋盘
+	display(board, ROW, EOL);
+	//下棋
+	while (1)
+	{
+		//玩家下
+		player(board,ROW,EOL);
+		display(board, ROW, EOL);
+		//判断玩家是否赢
+		ret = iswin(board,ROW,EOL);
+		if (ret != 1)
+		{
+			break;
+		}
+		//电脑下
+		npc(board, ROW, EOL);
+		display(board, ROW, EOL);
+		//判断电脑是否赢
+		ret =  iswin();
+		if (ret != 2)
+		{
+			break;
+		}
+	}
+	if (ret == 1)
+	{
+		printf("玩家赢\n");
+	}
+	else if (ret == 2)
+	{
+		printf("电脑赢\n");
+	}
+	else
+	{
+		printf("平局\n");
+	}
+}
+void test()
+{
+	int input = 0;
+	srand((unsigned int)time(NULL));
+	do
+	{
+		menu();
+		printf("请选择:>");
+		scanf_s("%d", &input);
+		switch (input)
+		{
+		case 1:
+			printf("三子棋\n");
+			game();
+			break;
+		case 0:
+			printf("退出游戏\n ");
+			break;
+		default:
+			printf("选择错误，请重新选择!\n");
+			break;
+		}
+	} while (input);
+}
+
+int main()
+{
+	test();
+	return 0;
+}
