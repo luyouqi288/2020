@@ -1,0 +1,16 @@
+	#pragma once
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#define ROW 3
+#define EOL 3
+//函数声明
+void initboard(char board[ROW][EOL], int row, int eol);
+void display(char board[ROW][EOL], int row, int eol);
+void player(char board[ROW][EOL], int row, int eol);
+void npc(char board[ROW][EOL], int row, int eol);
+
+//告诉我们游戏状态
+//   1         2         3       4
+//玩家赢     机器赢    平局    继续
+int iswin(char board[ROW][EOL], int row, int eol);
