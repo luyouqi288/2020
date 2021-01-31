@@ -1,0 +1,82 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//   结构体类型   struct(结构体关键字)    Stu  结构体标签   
+
+//描述一个学生  struct Stu-结构体类型 
+
+//struct stu
+//{
+//	char name[20];
+//	short age;
+//	char tele[12];
+//	char sex[5];
+//}s1,s2,s3;//  s1,s2,s 3都是全局变量（尽量少用）
+//int main()
+//{
+//	struct stu s;//  s是局部变量
+//	return 0;
+//}
+//typedef struct Stu
+//{
+//	char name[20];
+//	short age;
+//	char tele[12];
+//	char sex[5];
+//}stu;   //   重新定义
+//int main()
+//{
+//	stu s1 = { "张三",20,"2283613064","男" };
+//	//
+//	return 0;
+//}
+
+//struct S
+//{
+//	int a;
+//	char c;
+//	char arr[20];
+//	double d;
+//};
+//struct T
+//{
+//	char ch[10];
+//	struct S s;
+//	char* pc;
+//};
+//int main()
+//{
+//	char arr[] = "hehe\n";
+//	struct T t = { "hehe",{100,'w',"haha",3.14},arr };//不知道是写NULL
+//	printf("%s\n", t.s.arr);						  //也可以用箭头
+//	return 0;
+//}
+
+//typedef struct S
+//{
+//	char name[20];
+//	short age;
+//	char tele[12];
+//	char sex[5];
+//}S;
+//void Print1(S tmp)	//还得放到main函数之前
+//{									 //还需要tmp上的临时创建
+//	printf("name: %s\n", tmp.name);
+//	printf("age: %d\n", tmp.age);
+//	printf("tele: %s\n", tmp.tele);
+//	printf("sex: %s\n", tmp.sex);
+//}
+//void Print2(S* ps)//不用开辟空间
+//{									//传过去地址 只需要4/8个字节
+//	printf("name: %s\n", ps->name);
+//	printf("age: %d\n", ps->age);
+//	printf("tele: %s\n", ps->tele);
+//	printf("sex: %s\n", ps->sex);
+//}
+//int main()
+//{
+//	S s = { "张三",40,"15083033298","男" };
+//	Print1(s);
+//	printf("\n");
+//	Print2(&s);
+//	return 0;
+//}
