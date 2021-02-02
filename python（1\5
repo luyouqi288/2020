@@ -1,0 +1,39 @@
+#将数据输出到文件当中
+fp=open('D:/vip.test','a+')   #打开一个文件
+# a+ 的意思是将在原文件上追加这个文件  若这个文件不存在则创建一个这样的文件
+print('helloworld',file=fp)
+#打印数字时什么也不用加  打印字符时要加单引号或者单引号
+fp.close()
+#关闭文件
+
+#不进行换行输出
+print('hello','world','python')
+print('hello\nworld')    #  \n 转义字符换行
+print('hello\tworld')    #  \t 重新制表符（四个为一组  如果之前正好则有四个空格）
+print('hello\rworld')    #  \r 回车  将输出“world”而没有之前的（将前面的进行了覆盖）
+print('hello\bworld')    #  \b 退格  将输出少掉一个“o”
+print('老师说:\'大家好\'') #  \\ 将有意义的字符变得没意义
+print('htpp:\\\\www.123.com')  #  将有\\使其变得有意义
+
+#原字符 不希望字符串中的转义字符起作用 就使用原字符  就是在字符串之前加r或者R
+print(r'hello\nworld')  #  r/R 将使\n变得没用
+
+print(chr(0b100111001011000))   #0b表示二进制   运行的是“×”这个字符（乘）
+print(ord('乘'))                # 运行的是“0b……”十进制数（20056）
+
+#python中的保留字
+import keyword
+print(keyword,kwlist)
+#j即可以显示出保留字即不能用来自己表示
+
+#变量
+name='路晨怡'
+print(name)
+print('标识',id(name))
+print('类型',type(name))
+print('值',name)
+
+#变量的多次赋值
+name='路晨怡'
+name='张一彬'
+#当多次赋值后 变量名会指向新的空间
