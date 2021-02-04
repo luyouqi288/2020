@@ -1,0 +1,95 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//void my_strcpy(char* dest, char* src)//    优化前
+//{
+//	while (*src != '\0')
+//	{
+//		*dest = *src;
+//		dest++;
+//		src++;
+//	}
+//	*dest = *src;
+//}
+//int main()
+//{
+//	//strcpy
+//	//字符串拷贝
+//	char arr1[] = "##############";
+//	char arr2[] = "bit";
+//	my_strcpy(arr1, arr2);
+//	printf("%s\n", arr1);
+//	printf("%s\n", arr2);
+//	return 0;
+//}
+
+//#include<assert.h>//     优化后
+//void my_strcpy(char* dest, const char* src)//    如果下方写反则编译器进行不下去了  令错误提前呈现  
+//{
+//	assert(dest != NULL);
+//	assert(src != NULL);//断言
+//	//把src指向的字符串拷贝到dest指向的空间，包含'\0'字符
+//	while (*dest++ = *src++)//循环的结果为赋值的结果 b i t \0   0为假  循环结束
+//	{
+//		;
+//	}
+//}
+//int main()
+//{
+//	//strcpy
+//	//字符串拷贝
+//	char arr1[] = "##############";
+//	char arr2[] = "bit";
+//	my_strcpy(arr1, arr2);
+//	printf("%s\n", arr1);
+//	printf("%s\n", arr2);
+//	return 0;
+//}
+
+//满分
+//#include<assert.h>
+//char* my_strcpy(char* dest, const char* src)
+//{
+//	assert(dest != NULL);
+//	assert(src != NULL);			
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//}
+//int main()
+//{
+//	char arr1[] = "##############";
+//	char arr2[] = "bit";
+//	printf("%s\n", my_strcpy(arr1, arr2));
+//	return 0;
+//}
+
+//int main()
+//{
+//	const int num = 10;		 //const可以用来修饰指针	
+//	const int* p = &num;     //const放在*的左边时，修饰的是*p，也就是说不能通过p来改变*p（num）的值
+//	int* const p = &num;	 //const放在*的右边时，修饰的是指针变量本身，p就不能被改变了
+//	*p = 20;
+//	printf("%d\n", num);
+//	return 0;
+//}
+
+//#include<assert.h>
+//int my_strlen(const char* str)
+//{
+//	int count = 0;
+//	assert(str != NULL);
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	char arr[] = "abcde";
+//	int len = my_strlen(arr);
+//	printf("%d\n", len);
+//	return 0;
+//}
